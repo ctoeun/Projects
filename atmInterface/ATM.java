@@ -3,6 +3,9 @@ package atmInterface;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/*
+ * This projects implements an ATM interface to store banking info
+ */
 public class ATM {
 
 	private static Scanner scan = new Scanner(System.in);
