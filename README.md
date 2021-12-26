@@ -12,7 +12,7 @@ Cops vs Robbers GUI (Java) --
 Rock, Paper, Scissors GUI (Java) --
   •	Built a small rock, paper, scissors game using Java’s built-in GUI and basic computer science concepts.
   
-(CURRENTLY WORKING ON) Personal Website (Javascript, HTML, CSS) --
+(**CURRENTLY WORKING ON**) Personal Website (Javascript, HTML, CSS) --
   •	Created a personal website (portfolio) containing a description about me, my experiences and personal projects.
   
 (Will add more projects and better descriptions :p)
