@@ -152,6 +152,15 @@ public class User {
 	/**
 	 * 
 	 * @param acctIndex
+	 * @return
+	 */
+	public String getAccountName(int acctIndex) {
+		return this.accounts.get(acctIndex).getAccountName();
+	}
+
+	/**
+	 * 
+	 * @param acctIndex
 	 * @param amount
 	 * @param memo
 	 */

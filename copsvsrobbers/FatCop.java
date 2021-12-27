@@ -26,7 +26,7 @@ public class FatCop extends Plant {
 	static {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File("src/a9b/fatCop.png"));
+			image = ImageIO.read(new File("src/copsvsrobbers/fatCop.png"));
 		} catch (IOException e) {
 			System.out.println("fat cop image was not found");
 			System.exit(0);

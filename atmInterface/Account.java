@@ -30,6 +30,14 @@ public class Account {
 	 * 
 	 * @return
 	 */
+	public String getAccountName() {
+		return this.name;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getUUID() {
 		return this.UUID;
 	}
@@ -71,7 +79,7 @@ public class Account {
 	 * 
 	 */
 	public void printTransactionHistory() {
-		System.out.printf("\nTransaction history for account %s\n", this.UUID);
+		System.out.printf("\nTransaction history for account %s : %s\n", this.UUID, this.name);
 		for (int t = this.transactions.size() - 1; t >= 0; t--) {
 			System.out.println(this.transactions.get(t).getSummaryLine());
 		}

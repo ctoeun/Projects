@@ -26,7 +26,7 @@ public class TankRobber extends Zombie {
 	static {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File("src/a9b/tankRobber.png"));
+			image = ImageIO.read(new File("src/copsvsrobbers/tankRobber.png"));
 		} catch (IOException e) {
 			System.out.println("tank robber image was not found");
 			System.exit(0);

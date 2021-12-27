@@ -30,7 +30,7 @@ public class Donut extends Plant {
 	static {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File("src/a9b/Donut.png"));
+			image = ImageIO.read(new File("src/copsvsrobbers/Donut.png"));
 		} catch (IOException e) {
 			System.out.println("donut image was not found");
 			System.exit(0);

@@ -26,7 +26,7 @@ public class BasicCop extends Plant {
 	static {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File("src/a9b/basicCop.png"));
+			image = ImageIO.read(new File("src/copsvsrobbers/basicCop.png"));
 		} catch (IOException e) {
 			System.out.println("basic cop image was not found");
 			System.exit(0);

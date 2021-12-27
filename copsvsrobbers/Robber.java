@@ -26,7 +26,7 @@ public class Robber extends Zombie {
 	static {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File("src/a9b/robber.png"));
+			image = ImageIO.read(new File("src/copsvsrobbers/robber.png"));
 		} catch (IOException e) {
 			System.out.println("robber image was not found");
 			System.exit(0);

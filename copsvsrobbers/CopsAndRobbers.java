@@ -75,7 +75,7 @@ public class CopsAndRobbers extends JPanel implements ActionListener, MouseListe
 
 		// Load reference image
 		try {
-			referenceImage = ImageIO.read(new File("src/a9b/basicCop.png"));
+			referenceImage = ImageIO.read(new File("src/copsvsrobbers/basicCop.png"));
 		} catch (IOException e) {
 			System.out.println("A test file was not found");
 			System.exit(0);
@@ -325,9 +325,9 @@ public class CopsAndRobbers extends JPanel implements ActionListener, MouseListe
 
 				// Load and set images for JButtons.
 				try {
-					Image basicImage = ImageIO.read(new File("src/a9b/basicCop.png"));
-					Image fatImage = ImageIO.read(new File("src/a9b/fatCop.png"));
-					Image donutImage = ImageIO.read(new File("src/a9b/Donut.png"));
+					Image basicImage = ImageIO.read(new File("src/copsvsrobbers/basicCop.png"));
+					Image fatImage = ImageIO.read(new File("src/copsvsrobbers/fatCop.png"));
+					Image donutImage = ImageIO.read(new File("src/copsvsrobbers/Donut.png"));
 					basicCop.setIcon(new ImageIcon(basicImage));
 					fatCop.setIcon(new ImageIcon(fatImage));
 					donut.setIcon(new ImageIcon(donutImage));
@@ -419,7 +419,9 @@ public class CopsAndRobbers extends JPanel implements ActionListener, MouseListe
 						checkStatus = 1;
 						start.setBackground(Color.yellow);
 						resource.setText("CASH: $" + cashAmount);
-						JOptionPane.showMessageDialog(null, "WAVE 1 + $25");
+						if (score <= 0) {
+							JOptionPane.showMessageDialog(null, "WAVE 1 + $25");
+						}
 					}
 				});
 				// Quits JFrame when quit JButton is pressed
