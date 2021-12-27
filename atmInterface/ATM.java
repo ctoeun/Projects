@@ -23,8 +23,7 @@ public class ATM {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		userJD.addAccount(newAccount);
-		bankOfAmerica.addAccount(newAccount);
+		addAccounts();
 
 		User curUser;
 
@@ -39,6 +38,14 @@ public class ATM {
 		}
 	}
 
+	/*
+	 * Add all accounts here -- sense of abstraction for main method
+	 */
+	private static void addAccounts() {
+		bankOfAmerica.addAccount(newAccount);
+		userJD.addAccount(newAccount);
+	}
+	
 	/**
 	 * 
 	 * Main menu prompt interface -- asks user for ID and pin
