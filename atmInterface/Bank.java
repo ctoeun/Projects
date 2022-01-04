@@ -3,14 +3,19 @@ package atmInterface;
 import java.util.ArrayList;
 import java.util.Random;
 
+/*
+ * This class creates a new bank for ATM
+ */
 public class Bank {
 
+	// inits
 	private String name;
 	private ArrayList<User> user;
 	private ArrayList<Account> accounts;
 	private Random r = new Random();
 
 	/**
+	 * Constructor for creating new bank
 	 * 
 	 * @param name
 	 */
@@ -21,6 +26,7 @@ public class Bank {
 	}
 
 	/**
+	 * Returns the bank name
 	 * 
 	 * @return
 	 */
@@ -29,6 +35,7 @@ public class Bank {
 	}
 
 	/**
+	 * Returns the users unique ID
 	 * 
 	 * @return
 	 */
@@ -57,6 +64,7 @@ public class Bank {
 	}
 
 	/**
+	 * Gets the users unique account ID
 	 * 
 	 * @return
 	 */
@@ -85,6 +93,7 @@ public class Bank {
 	}
 
 	/**
+	 * Adds a new user account to bank
 	 * 
 	 * @param newAccount
 	 */
@@ -93,6 +102,7 @@ public class Bank {
 	}
 
 	/**
+	 * Adds a new user to specified account
 	 * 
 	 * @param firstName
 	 * @param lastName
@@ -116,6 +126,7 @@ public class Bank {
 	}
 
 	/**
+	 * Checks if users ID and pin is valid to login
 	 * 
 	 * @param userID
 	 * @param pin

@@ -2,6 +2,12 @@ package atmInterface;
 
 import java.util.ArrayList;
 
+/*
+ * This class creates a new banking account for defined users
+ * 
+ * "Checking" or "Savings"
+ * 
+ */
 public class Account {
 
 	private String name; // name of the account
@@ -10,6 +16,8 @@ public class Account {
 	private ArrayList<Transaction> transactions;
 
 	/**
+	 * 
+	 * Constructor for creating new account
 	 * 
 	 * @param name
 	 * @param holder
@@ -27,6 +35,7 @@ public class Account {
 	}
 
 	/**
+	 * Returns the acconut name
 	 * 
 	 * @return
 	 */
@@ -35,6 +44,7 @@ public class Account {
 	}
 	
 	/**
+	 * Returns the users unique ID
 	 * 
 	 * @return
 	 */
@@ -43,6 +53,7 @@ public class Account {
 	}
 
 	/**
+	 * Returns the users summary line when requested
 	 * 
 	 * @return
 	 */
@@ -60,6 +71,7 @@ public class Account {
 	}
 
 	/**
+	 * Gets the users current balance on account
 	 * 
 	 * @return
 	 */
@@ -76,7 +88,7 @@ public class Account {
 	}
 
 	/**
-	 * 
+	 * Prints the users complete transaction history after deposits, withdraws, and transfers
 	 */
 	public void printTransactionHistory() {
 		System.out.printf("\nTransaction history for account %s : %s\n", this.UUID, this.name);
@@ -87,6 +99,7 @@ public class Account {
 	}
 
 	/**
+	 * Adds a new transaction with optional memo per user
 	 * 
 	 * @param amount
 	 * @param memo

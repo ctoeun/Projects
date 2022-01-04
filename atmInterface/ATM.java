@@ -4,12 +4,12 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /*
- * This projects implements an ATM interface to store banking info
+ * This projects implements an ATM interface to store bank info and complete transactions
  */
 public class ATM {
 
 	private static Scanner scan = new Scanner(System.in);
-	private static final int MAXATTEMPTS = 3;
+	private static final int MAXATTEMPTS = 3; // max attempts for user to login
 	// add new banks
 	private static Bank bankOfAmerica = new Bank("Bank of America");
 	// add new users
